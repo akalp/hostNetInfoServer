@@ -8,7 +8,14 @@ This is a simple Go web service that returns information about the host's networ
 ```bash
 git clone https://github.com/akalp/hostNetInfoServer.git
 ```
-2. Build the application:
+
+2. Change into the project directory:
+
+```bash
+cd clientIpServer
+```
+
+3. Build the application:
 
 * for linux x64:
 ```bash
@@ -19,16 +26,15 @@ GOOS=linux GOARCH=amd64 go build
 GOOS=windows GOARCH=amd64 go build
 ```
 
-
-3. Set the environment variables (optional):
+4. Set the environment variables (optional):
 ```bash
 export HNIS_PORT=8080
 export HNIS_IF_PREFIX=en
 ```
 
-4. Run the application:
+5. Run the application:
 ```bash
-./go-network-info
+./hostNetInfoServer
 ```
 
 ## Usage
