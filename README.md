@@ -42,7 +42,7 @@ By default, the web service listens on port 8080 and returns information for all
 * `port` (default: 8080): The port on which the web service listens.
 * `if-prefix` (default: ""): The prefix to match for network interface names.
 
-* ## API
+## API
 
 The web service exposes a single endpoint (/) that returns a JSON-encoded list of objects representing the network interfaces and their addresses:
 
@@ -74,10 +74,10 @@ The web service exposes a single endpoint (/) that returns a JSON-encoded list o
 ```
 Each object in the list represents a network interface, and includes the following fields:
 
-* name: The name of the interface.
-* mtu: The maximum transmission unit (MTU) of the interface.
-* flags: A comma-separated list of flags that describe the state of the interface (e.g., "up", "broadcast", "multicast", etc.).
-* addresses: An object of objects representing the IP addresses associated with the interface. Each ip address grouped by the type of it (IPv4 or IPv6).
+* `name`: The name of the interface.
+* `mtu`: The maximum transmission unit (MTU) of the interface.
+* `flags`: A comma-separated list of flags that describe the state of the interface (e.g., "up", "broadcast", "multicast", etc.).
+* `addresses`: An object of objects representing the IP addresses associated with the interface. Each ip address grouped by the type of it (IPv4 or IPv6).
 
 ### License
 
