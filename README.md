@@ -22,8 +22,8 @@ GOOS=windows GOARCH=amd64 go build
 
 3. Set the environment variables (optional):
 ```bash
-export PORT=8080
-export IF_PREFIX=en
+export HNIS_PORT=8080
+export HNIS_IF_PREFIX=en
 ```
 
 4. Run the application:
